@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --white: #fff;
+}
+
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 700px;
+    display: flex;
+    box-shadow: 10px  10px 5px  rgb(235, 241, 255);
+    border-radius: 30px;
+}
+
+.result {
+    background: linear-gradient(#5b46d1, #1824cc);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    flex: 1.25;
+}
+
+h1 {
+    color: lightgray;
+    opacity: .7;
+    font-size: 25px;
+    margin: 35px; 
+}
+
+.para { 
+   font-size: 15px;
+   margin: 25px 45px;
+   color: lightgray;
+   line-height: normal;
+   letter-spacing: 1px;
+}
+
+.header3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.score {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: linear-gradient(#241481ce, #404ad433);
+    margin: auto;
+}
+
+.headerscore {
+    font-size: 60px;
+    padding-top: 38px;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.totalscore {
+    color: lightgray;
+    margin: 0;
+    opacity: .6;
+}
+
+.summary {
+    flex: 1;
+    padding: 0px 35px ;
+
+}
+
+.title {
+    padding-bottom: 15px;
+    color: rgb(48, 59, 90);
+}
+
+span {
+    margin: auto;
+    color: lightslategray;
+}
+
+.scored {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.heading {
+    display: flex;
+    gap: 10px;
+}
+
+.marks {
+    border-radius: 9px;
+    margin: 10px 0 ;
+    font-weight: bold;
+    opacity: .7;
+    display: flex;
+    padding: 0px 10px;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.144);
+    color: rgb(255, 87, 87);
+}
+
+.reactionscore{
+    padding-right: 8px;
+    margin-right: 0; 
+}
+
+.memory {
+    background-color:hsla(39, 100%, 56%, 0.144);
+    color:  rgb(255, 176, 31);
+}
+
+.memoryscore {
+    padding-right: 8px;
+    margin-right: 0;
+}
+
+.verbal {
+    background-color: rgba(0, 189, 145, 0.144);
+    color: rgb(0, 189, 145);
+}
+
+.verbalscore{
+    padding-right: 8px;
+    margin-right: 0;
+}
+
+.visual {
+    background-color: rgba(17, 36, 212, 0.144);
+    color:  rgb(17, 37, 212);
+}
+
+.visualscore {
+    padding-right: 8px;
+    margin-right: 0;
+}
+
+.btn {
+    background-color: rgb(48, 59, 90);
+    width: 100%;
+    border: 0;
+    border-radius: 25px;
+    color: white;
+    margin: 30px 1px;
+    padding: 15px 0;
+}
+
+.btn:hover {
+    background: linear-gradient(#5b46d1, #1824cc);
+}
+@media screen and (max-width:700px) {
+   body {
+    height: 900px;
+   }
+
+   .container {
+    flex-direction: column;
+    height: 100%;
+   }
+
+   .result {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    flex: 0.8;
+   }
+
+   h1 {
+    font-size: 20px;
+    margin: 25px;
+   }
+
+   .para { 
+    color: lightgray;
+    letter-spacing: 1px;
+    margin: 15px 70px;
+ }
+
+ .header3 {
+    font-size: 25px;
+ }
+
+   .title {
+    color: rgb(48, 59, 90);
+   }
+   .btn {
+    padding: 20px 0;
+   }
+}
